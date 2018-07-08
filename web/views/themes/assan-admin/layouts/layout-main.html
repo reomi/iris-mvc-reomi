@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Assan admin</title>
+
+        <!-- Bootstrap -->
+        <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!--side menu plugin-->
+        <link href="assets/plugins/hoe-nav/hoe.css" rel="stylesheet">
+        <!-- icons-->
+        <link href="assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+        <link href="assets/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+        <!--template custom css file-->
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <script src="assets/js/modernizr.js"></script>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body hoe-navigation-type="vertical" hoe-nav-placement="left" theme-layout="wide-layout">
+
+        <!--side navigation start-->
+        <div id="hoeapp-wrapper" class="hoe-hide-lpanel" hoe-device-type="desktop">
+
+            <!--top start-->
+            {{ render "partials/top.html"}}
+            <!--top end-->
+
+            <div id="hoeapp-container" hoe-color-type="lpanel-bg7" hoe-lpanel-effect="shrink">
+
+                <!--menu start-->
+                {{ render "partials/menu.html"}}
+                <!--menu end-->
+
+                <!--start main content-->
+                <section id="main-content">
+                    <div class="space-30"></div>
+                    {{ yield }}
+                <!--end container-->
+
+                    <!--footer start-->
+                    {{ render "partials/footer.html"}}
+                    <!--footer end-->
+
+                </section><!--end main content-->
+            </div>
+        </div><!--end wrapper-->
+
+        <!--Common plugins-->
+        <script src="assets/plugins/jquery/dist/jquery.min.js"></script>
+        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/plugins/hoe-nav/hoe.js"></script>
+        <script src="assets/plugins/pace/pace.min.js"></script>
+        <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="assets/js/app.js"></script>
+        <!--page scripts-->
+        <!-- Flot chart js -->
+        <script src="assets/plugins/flot/jquery.flot.js"></script>
+        <script src="assets/plugins/flot/jquery.flot.tooltip.min.js"></script>
+        <script src="assets/plugins/flot/jquery.flot.resize.js"></script>
+        <script src="assets/plugins/flot/jquery.flot.pie.js"></script>
+        <script src="assets/plugins/flot/jquery.flot.time.js"></script>
+        <!--vector map-->
+        <script src="assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+        <script src="assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+        <!-- ChartJS-->
+        <script src="assets/plugins/chartJs/Chart.min.js"></script>
+        <!--dashboard custom script-->
+        <script src="assets/js/dashboard.js"></script>
+    </body>
+</html>
